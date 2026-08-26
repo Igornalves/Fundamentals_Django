@@ -77,3 +77,91 @@ INSTALLED_APPS = [
 ]
 ```
 
+# Fundamentals Django
+
+## Configuração no Ubuntu
+
+### 1. Entrar no projeto
+
+```bash
+cd ~/Documentos/Projeto\ Vscode/Fundamentals_Django
+```
+
+### 2. Instalar o suporte ao `venv`
+
+```bash
+sudo apt update
+sudo apt install python3.14-venv
+```
+
+### 3. Criar o ambiente virtual
+
+```bash
+python3 -m venv venv
+```
+
+> Se o `venv` tiver sido criado com erro anteriormente:
+
+```bash
+rm -rf venv
+python3 -m venv venv
+```
+
+### 4. Ativar o ambiente virtual
+
+```bash
+source venv/bin/activate
+```
+
+Se aparecer `(venv)` no terminal, está funcionando.
+
+### 5. Atualizar o pip
+
+```bash
+python -m pip install --upgrade pip
+```
+
+### 6. Instalar o Django
+
+```bash
+pip install django
+```
+
+### 7. Verificar
+
+```bash
+python --version
+django-admin --version
+which python
+```
+
+O `which python` deve apontar para:
+
+```text
+venv/bin/python
+```
+
+### 8. Desativar
+
+```bash
+deactivate
+```
+
+---
+
+## Comandos rápidos
+
+```bash
+# Ativar
+source venv/bin/activate
+
+# Desativar
+deactivate
+
+# Ver Python
+python --version
+
+# Ver Django
+django-admin --version
+```
+
