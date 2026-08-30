@@ -165,3 +165,7 @@ python --version
 django-admin --version
 ```
 
+## Usuario super do Django Admin 
+
+- usuario: pycodebr
+- senha: 90108
